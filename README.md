@@ -12,7 +12,7 @@
 * Open terminal
 * Start redis queue, publisher and subscriber server.
 ```
-./start-server.sh"
+./start-server.sh
 ```
 This will start up redis queue for batch processing and also starts the publisher server on port 8000 and another server is running on port 9000 (subscriber).
 
