@@ -36,6 +36,8 @@ class SystemTest extends TestCase
             "lname" => "Arinze"
         ]);
 
+        dd($response->baseResponse->getContent());
+
         $response->assertStatus(200)
             ->assertJsonFragment([
                 "status"=>true

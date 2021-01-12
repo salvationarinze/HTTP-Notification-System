@@ -25,8 +25,6 @@ class PublisherController extends Controller
             $url_num = count($urls);
             $data = $request->all();
 
-
-//            fwrite(STDOUT, 'foo');
             Publish::dispatch($topic, $data, $urls);
 
             return response()
