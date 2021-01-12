@@ -1,4 +1,4 @@
-name: Goto Dispatch API
+name: HTTP Notification System
 
 on:
   push:
