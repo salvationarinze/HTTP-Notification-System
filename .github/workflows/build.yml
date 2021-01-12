@@ -3,7 +3,7 @@ name: HTTP Notification System
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   laravel-tests:
