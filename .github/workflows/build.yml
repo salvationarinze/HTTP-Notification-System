@@ -23,4 +23,5 @@ jobs:
       - name: Run redis queue
         run: php artisan queue:work
       - name: Execute tests (Unit and Feature tests) via PHPUnit
-        run: vendor/bin/phpunit
+        run: vendor/bin/phpunit -d memory_limit=-1 tests/Feature
+
