@@ -17,7 +17,7 @@ class SystemTest extends TestCase
         $this->withoutExceptionHandling();
 
         $response = $this->post('/subscribe/topic1', [
-            "url" => "http://localhost:9000/test1"
+            "url" => "https://webhook.site/09742acc-754e-41b8-922a-7300663604d3"
         ]);
 
         $response->assertStatus(200)
@@ -29,14 +29,12 @@ class SystemTest extends TestCase
 
     public function testPublishToTopic()
     {
-//        $this->withoutExceptionHandling();
+        $this->withoutExceptionHandling();
 
         $response = $this->post('/publish/topic1', [
             "fname" => "Salvation",
             "lname" => "Arinze"
         ]);
-
-        dd($response->baseResponse->getContent());
 
         $response->assertStatus(200)
             ->assertJsonFragment([
