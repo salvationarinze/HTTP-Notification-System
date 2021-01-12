@@ -33,7 +33,7 @@ class SystemTest extends TestCase
 
         $response = $this->post('/publish/topic1', [
             "fname" => "Salvation",
-            "lname" => "Baba"
+            "lname" => "Arinze"
         ]);
 
         $response->assertStatus(200)
