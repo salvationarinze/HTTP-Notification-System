@@ -29,7 +29,7 @@ class SystemTest extends TestCase
 
     public function testPublishToTopic()
     {
-        $this->withoutExceptionHandling();
+//        $this->withoutExceptionHandling();
 
         $response = $this->post('/publish/topic1', [
             "fname" => "Salvation",
