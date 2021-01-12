@@ -31,4 +31,5 @@ curl -X POST -H "Content-Type: application/json" -d '{"message": "hello"}' http:
 
 The subscriber will be getting data forwarded to it when its corresponding topic is published, which it will then receive and print the data to verify everything is working at the test1 and test2 endpoints.
 
-![Screenshot](step-3.png)
+![](step-3.png | width=100)
+
